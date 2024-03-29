@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# ToDo App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple ToDo application built with React.
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+The ToDo app allows users to add tasks, mark tasks as completed, and delete tasks. It provides a visual representation of the tasks to be done, along with statistics on the number of pending tasks.
 
-### `npm start`
+## Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![ToDo App Demo](demo.gif)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+To run the application locally:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone this repository to your local machine.
+2. Navigate to the project directory.
+3. Install dependencies using `npm install`.
+4. Start the development server with `npm start`.
 
-### `npm run build`
+## Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Add tasks: Users can input tasks to be added to their to-do list.
+- Mark tasks as completed: Users can check off tasks as they are completed.
+- Delete tasks: Users can remove tasks from the list.
+- Statistics: The app provides statistics on the number of pending tasks.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Usage
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Components
 
-### `npm run eject`
+The app consists of the following components:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **App**: The main component that orchestrates the application.
+- **TaskInput**: Component for adding new tasks.
+- **TaskItems**: Component for displaying individual tasks.
+- **Stats**: Component for displaying statistics.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Adding a Task
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Enter the task name in the input field.
+- Press the "+" button or hit Enter to add the task to the list.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Marking a Task as Completed
 
-## Learn More
+- Click on the checkbox next to the task name to mark it as completed.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Deleting a Task
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Click on the delete icon (trash can) next to the task to delete it from the list.
 
-### Code Splitting
+### Statistics
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- The statistics component displays the number of pending tasks.
 
-### Analyzing the Bundle Size
+## Implementation Details
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Local Storage
 
-### Making a Progressive Web App
+The application uses local storage to persist tasks even after the page is refreshed. Tasks are stored as an array of objects in the local storage under the key "todoList".
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+## Dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+The application uses the following dependencies:
 
-### Deployment
+- React: JavaScript library for building user interfaces.
+- react-icons: Library for icons in React applications.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
