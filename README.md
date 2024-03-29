@@ -8,7 +8,8 @@ The ToDo app allows users to add tasks, mark tasks as completed, and delete task
 
 ## Demo
 
-![ToDo App Demo](demo.gif)
+![ToDo App Demo](https://github.com/MehekFatima/React-ToDo/blob/master/chrome-capture-2024-3-29.gif?raw=true)
+
 
 ## Getting Started
 
